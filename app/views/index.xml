@@ -1,0 +1,31 @@
+<Alloy>
+  <Collection src="user" />
+  <TabGroup id="index" navbarHidden="true">
+    <Tab id="users" title="一覧">
+      <Window id="index">
+        <TableView id="usersTable" dataCollection="user" dataTransform="transFormFunction">
+          <TableViewRow title="{name}" onClick="doClick" />
+        </TableView>
+      </Window>
+    </Tab>
+    <Tab id="userAdd" title="登録">
+      <Window id="userAddWin" class="container">
+        <View layout="vertical">
+          <View layout="horizontal">
+            <Label text="名前" />
+            <TextArea id="userName" />
+          </View>
+          <View layout="horizontal">
+            <Label text="年齢" />
+            <TextArea id="userAge" />
+          </View>
+          <View layout="horizontal">
+            <Label text="Eメール" />
+            <TextArea id="userEmail" />
+          </View>
+          <Label id="add" text="登録" />
+        </View>
+      </Window>
+    </Tab>
+  </TabGroup>
+</Alloy>
