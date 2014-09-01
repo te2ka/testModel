@@ -19,8 +19,6 @@ $.add.addEventListener('click', function(e){
 /* これ重要 */
 function transFormFunction(model){
   var transform = model.toJSON();
-  transform.title = '[' + transform.title + ']';
-  transform.custom = transform.title + " by " + transform.author;
   return transform;
 }
 
