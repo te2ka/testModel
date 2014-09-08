@@ -17,6 +17,6 @@
   height: Ti.UI.SIZE,
 }
 
-"TextArea": {
+"TextField": {
   width: Ti.UI.FILL,
 }

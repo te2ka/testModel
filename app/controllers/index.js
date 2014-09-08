@@ -1,5 +1,9 @@
 $.index.open();
 
+$.index.addEventListener('focus', function(e){
+  library.fetch();
+});
+
 $.add.addEventListener('click', function(e){
   var newUser = Alloy.createModel('user', {
     name:  $.userName.value,
@@ -11,8 +15,11 @@ $.add.addEventListener('click', function(e){
   if(newUser.isValid()){
     newUser.save();
     alert('success');
+    $.userName.setValue('');
+    $.userAge.setValue('');
+    $.userEmail.setValue('');
   } else{
-    alert('failed');
+    alert(newUser.errorMsg);
   }
 });
 

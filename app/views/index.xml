@@ -13,15 +13,15 @@
         <View layout="vertical">
           <View layout="horizontal">
             <Label text="名前" />
-            <TextArea id="userName" />
+            <TextField id="userName" borderStyle="Ti.UI.INPUT_BORDERSTYLE_ROUNDED" />
           </View>
           <View layout="horizontal">
             <Label text="年齢" />
-            <TextArea id="userAge" />
+            <TextField id="userAge" borderStyle="Ti.UI.INPUT_BORDERSTYLE_ROUNDED" />
           </View>
           <View layout="horizontal">
             <Label text="Eメール" />
-            <TextArea id="userEmail" />
+            <TextField id="userEmail" borderStyle="Ti.UI.INPUT_BORDERSTYLE_ROUNDED" />
           </View>
           <Label id="add" text="登録" />
         </View>
