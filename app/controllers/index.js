@@ -19,7 +19,7 @@ $.add.addEventListener('click', function(e){
     $.userAge.setValue('');
     $.userEmail.setValue('');
   } else{
-    alert(newUser.errorMsg);
+    alert(newUser.errorMsg.join("\n"));
   }
 });
 
