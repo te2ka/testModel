@@ -29,7 +29,7 @@ exports.definition = {
                 break;
               }
               if(value < 1){
-                this.errormsg.push('年齢がマイナスなんてあり得ません');
+                this.errorMsg.push('年齢がマイナスなんてあり得ません');
               }
               break;
             case 'email':
