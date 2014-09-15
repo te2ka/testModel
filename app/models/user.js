@@ -26,6 +26,10 @@ exports.definition = {
             case 'age':
               if(value.length <= 0 || isNaN(value)){
                 this.errorMsg.push('年齢は数字のみです');
+                break;
+              }
+              if(value < 1){
+                this.errormsg.push('年齢がマイナスなんてあり得ません');
               }
               break;
             case 'email':
